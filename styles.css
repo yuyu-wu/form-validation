@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+:root {
+    --main-color: rgb(130,96,195);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: 'Karla', 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+}
+
+#canvas {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas img {
+    width: 100%;
+}
+
+#canvas footer {
+    align-self: flex-start;
+    padding: 0px 4rem;
+    font-size: 0.8rem;
+}
+
+#canvas footer a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+#form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 30px rgba(84,96,103,0.25);
+    padding: 40px 20px;
+    margin: 0 20px;
+    margin-right: 60px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+#title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#form {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    padding: 0 30px;
+}
+
+#form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form div {
+    position: relative;
+    margin-bottom: 15px;
+    width: 70%;
+}
+
+#form input:focus {
+    border: 2px solid var(--main-color);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#form div i {
+    position: absolute;
+    padding: 10px;
+}
+
+.failure,
+.success {
+    right: 0;
+    opacity: 0;
+}
+
+.failure,
+.error-message {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+button {
+    margin-top: 15px;
+    width: 70%;
+    height: 45px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+    font-family: 'Karla';
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+.sign-in {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.sign-in span {
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    color: var(--main-color);
+}
+  #footer {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  @media (max-width: 880px) {
+    #canvas {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #title {
+        font-size: 1.2rem;
+    }
+
+    #form-section {
+        width: 100%;
+        margin: 0 20px;
+    }
+    
+    #form div {
+        width: 100%;
+    }
+  }
