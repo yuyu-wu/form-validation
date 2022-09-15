@@ -162,10 +162,6 @@ button {
   }
 
   @media (max-width: 880px) {
-    body {
-        /* height: 70vh; */
-    }
-
     #canvas {
         display: none;
     }
